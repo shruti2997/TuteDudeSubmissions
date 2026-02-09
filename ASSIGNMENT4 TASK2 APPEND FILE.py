@@ -1,0 +1,11 @@
+fh = open("output.txt","at")
+fh.write("\nHello Python.\n")
+fh.write("Data successfully written to output.txt.\n")
+fh.write("=========================================================================")
+fh.write("\nLearning file handling in Python. \n")
+fh.write("Data successfully appended. \n")
+
+fh = open("output.txt","rt")
+content = fh.read()
+print(f"Final content of output.txt: {content}")
+fh.close()
